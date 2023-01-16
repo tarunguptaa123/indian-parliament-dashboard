@@ -4,8 +4,9 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import re
 from PIL import Image
-import numpy as np
 from io import BytesIO
+import numpy as np
+
 st.set_page_config(layout="wide")
 #@st.cache(persist=True)
 
