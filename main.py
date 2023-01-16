@@ -380,12 +380,12 @@ with tab7:
     i = STATES.index(state_list)
     # st.write(STATES[i]+" : "+"["+CM[i]+"]" +  LINKS[i])
     photu = requests.get(cm_image_links[i])
-    imge = Image.open(BytesIO(photu.content))
+#     imge = Image.open(BytesIO(photu.content))
     c1, c2 = st.columns([3, 1])
     c1.subheader("[" + CM[i] + "]" + LINKS[i])
     # col1.write(STATES[i]+" : "+"["+CM[i]+"]" +  LINKS[i])
     c2.caption("**Hon’ble Chief Minister of** " + "**" + STATES[i] + "**")
-    c2.image(imge, caption=CM[i], width=100)
+#     c2.image(imge, caption=CM[i], width=100)
 
 
 
